@@ -53,7 +53,7 @@
               <!-- HTML5 Card -->
               <div class="skill-card html-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/html.svg" alt="HTML"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/html.svg" alt="HTML"></div>
                       <div class="percentage">95%</div>
                   </div>
                   <h3 class="skill-title">HTML5</h3>
@@ -64,7 +64,7 @@
               <!-- JavaScript Card -->
               <div class="skill-card js-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/javascript.svg" alt="Javascript"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/javascript.svg" alt="Javascript"></div>
                       <div class="percentage">85%</div>
                   </div>
                   <h3 class="skill-title">JavaScript</h3>
@@ -75,7 +75,7 @@
               <!-- PHP Card -->
               <div class="skill-card php-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/php.svg" alt="PHP"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/php.svg" alt="PHP"></div>
                       <div class="percentage">90%</div>
                   </div>
                   <h3 class="skill-title">PHP</h3>
@@ -86,7 +86,7 @@
               <!-- CSS3 / SCSS Card -->
               <div class="skill-card css-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/css.svg" alt="CSS"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/css.svg" alt="CSS"></div>
                       <div class="percentage">92%</div>
                   </div>
                   <h3 class="skill-title">CSS3 / SCSS</h3>
@@ -97,7 +97,7 @@
               <!-- WordPress Card -->
               <div class="skill-card wp-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/wordpress.svg" alt="WORDPRESS"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/wordpress.svg" alt="WORDPRESS"></div>
                       <div class="percentage">95%</div>
                   </div>
                   <h3 class="skill-title">WordPress Development</h3>
@@ -108,7 +108,7 @@
               <!-- Joomla Card -->
               <div class="skill-card joomla-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/joomla.svg" alt="JOOMLA"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/joomla.svg" alt="JOOMLA"></div>
                       <div class="percentage">82%</div>
                   </div>
                   <h3 class="skill-title">Joomla Development</h3>
@@ -119,7 +119,7 @@
               <!-- Elementor Card -->
               <div class="skill-card elementor-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/elementor.svg" alt="ELEMENTOR"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/elementor.svg" alt="ELEMENTOR"></div>
                       <div class="percentage">89%</div>
                   </div>
                   <h3 class="skill-title">Elementor - Page Builder</h3>
@@ -130,7 +130,7 @@
               <!-- Github Card -->
               <div class="skill-card github-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/github.svg" alt="GITHUB"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/github.svg" alt="GITHUB"></div>
                       <div class="percentage">83%</div>
                   </div>
                   <h3 class="skill-title">Github</h3>
@@ -141,7 +141,7 @@
               <!-- Zapier Card -->
               <div class="skill-card zapier-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/zapier.svg" alt="ZAPIER"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/zapier.svg" alt="ZAPIER"></div>
                       <div class="percentage">80%</div>
                   </div>
                   <h3 class="skill-title">Zapier</h3>
@@ -152,7 +152,7 @@
               <!-- Figma Card -->
               <div class="skill-card figma-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/figma.svg" alt="FIGMA"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/figma.svg" alt="FIGMA"></div>
                       <div class="percentage">75%</div>
                   </div>
                   <h3 class="skill-title">Figma</h3>
@@ -163,7 +163,7 @@
               <!-- GAS Card -->
               <div class="skill-card gas-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/gas.svg" alt="GAS"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/gas.svg" alt="GAS"></div>
                       <div class="percentage">84%</div>
                   </div>
                   <h3 class="skill-title">Google App Script</h3>
@@ -174,7 +174,7 @@
               <!-- AHREFS Card -->
               <div class="skill-card ahrefs-card">
                   <div class="card-header">
-                      <div class="icon-box"><img loading="lazy" src="assets/images/ahrefs.svg" alt="AHREFS"></div>
+                      <div class="icon-box"><img loading="lazy" src="assets/images/Icons/ahrefs.svg" alt="AHREFS"></div>
                       <div class="percentage">73%</div>
                   </div>
                   <h3 class="skill-title">AHREFS</h3>
@@ -190,8 +190,7 @@
           <h3 class="h3-heading">My Work</h3>
           <h2 class="h2-heading">Finished Sites</h2>
           <div class="card-container">
-              <!-- Native PHP equivalent of your content block items -->
-              <p>Featured projects loaded dynamically here.</p>
+              <?php include __DIR__ . '/portfolio/templates/portfolio-home.php'; ?>
           </div>
           <a href="portfolio.php" class="btn-portfolio">Show More</a>
       </div>
