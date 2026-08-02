@@ -16,7 +16,7 @@
 			<h2 class="heading">Web Developer</h2>
 			<h3 class="subheading">I build custom WordPress/Joomla Sites | Themes | Plugins</h3>
 			<p class="hero-text">High-performance, Secure, and Custom-tailored WordPress & Jooma Sites. Transforming complex designs and plugins into production-grade digital experiences.</p>
-			<input type="button" class="btn-portfolio" value="View my Work">
+			<a href="/portfolio/portfolio.html" class="btn-portfolio">Show More</a>
 		</div>
 	</div>
 </section>
@@ -292,6 +292,7 @@
 	<button class="rp-filter" data-filter="wordpress" role="tab" aria-selected="false">WordPress Sites</button>
 	<button class="rp-filter" data-filter="joomla" role="tab" aria-selected="false">Joomla Sites</button>
 </div>
+
 <div class="rp-grid">	
 	<a href="https://h20carvaleting.com/" class="rp-card" data-category="wordpress" style="background-image:url('assets/images/uploads/h20.webp');">
 		<span class="rp-card-scrim"></span>
@@ -897,6 +898,7 @@
 						<span class="ct-info-value"><a href="tel:09496279503">+6394 9627 9503</a></span>
 					</span>
 				</div>
+
 			</aside>
 		</div>
 	</div>
@@ -906,77 +908,5 @@
   <!-- Footer Content -->
   <footer class="site-footer">
   </footer>
-
-  <!-- Portfolio Filter JavaScript -->
-  <script>
-  (function(){
-    var PAGE_SIZE = 9;
-    function initProjectFilters(){
-      var filters = document.querySelectorAll('.rp-filter');
-      var cards = document.querySelectorAll('.rp-card');
-      var showMoreBtn = document.querySelector('.rp-show-more');
-      if (!filters.length || !cards.length) return;
-
-      cards.forEach(function(card){
-        card.dataset.sortKey = Math.random();
-      });
-
-      var currentFilter = 'all';
-      var visibleCount = PAGE_SIZE;
-
-      function applyDisplay(){
-        var matches = [];
-        cards.forEach(function(card){
-          var isMatch = (currentFilter === 'all' || card.getAttribute('data-category') === currentFilter);
-          if (isMatch) matches.push(card);
-          card.style.display = 'none';
-        });
-
-        matches.sort(function(a, b){
-          return parseFloat(a.dataset.sortKey) - parseFloat(b.dataset.sortKey);
-        });
-
-        matches.forEach(function(card, i){
-          card.style.display = (i < visibleCount) ? '' : 'none';
-        });
-
-        if (showMoreBtn){
-          showMoreBtn.style.display = (matches.length > visibleCount) ? '' : 'none';
-        }
-      }
-
-      filters.forEach(function(btn){
-        btn.addEventListener('click', function(e){
-          e.preventDefault();
-          filters.forEach(function(b){
-            b.classList.remove('is-active');
-            b.setAttribute('aria-selected','false');
-          });
-          btn.classList.add('is-active');
-          btn.setAttribute('aria-selected','true');
-
-          currentFilter = btn.getAttribute('data-filter');
-          visibleCount = PAGE_SIZE;
-          applyDisplay();
-        });
-      });
-
-      if (showMoreBtn){
-        showMoreBtn.addEventListener('click', function(e){
-          e.preventDefault();
-          visibleCount += PAGE_SIZE;
-          applyDisplay();
-        });
-      }
-      applyDisplay();
-    }
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initProjectFilters);
-    } else {
-      initProjectFilters();
-    }
-  })();
-  </script>
 </body>
 </html>
